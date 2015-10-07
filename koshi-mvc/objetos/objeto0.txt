@@ -1,0 +1,10 @@
+Roca Gigante
+20203840
+p
+7    4    1
+Es una roca gigante e impasable
+Roca Gigante
+20203841
+p
+7    5    1
+Es una roca gigante e impasable

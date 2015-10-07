@@ -1,0 +1,60 @@
+Jabali
+20111055
+J
+9   4   2
+Un peligroso jabali... cuidado con los cuernos
+Jabali
+20111099
+J
+9   5   2
+Un peligroso jabali... cuidado con los cuernos
+Jabali
+20112555
+J
+10   4   2
+Un peligroso jabali... cuidado con los cuernos
+Jabali
+20111371
+J
+10   5   2
+Un peligroso jabali... cuidado con los cuernos
+Piedra Impasable
+30112564
+c
+7   2    1
+Piedra impasable...ve por otro lado
+Piedra Impasable
+30112565
+c
+7   3    1
+Piedra impasable...ve por otro lado
+Piedra Impasable
+30112566
+c
+8   2    1
+Piedra impasable...ve por otro lado
+Piedra Impasable
+30112567
+c
+8   3    1
+Piedra impasable...ve por otro lado
+Anaconda
+20105726
+U
+3   13   2
+Una anaconda...cuidado con el veneno
+Anaconda
+20111493
+U
+3   14   2
+Una anaconda...cuidado con el veneno
+Anaconda
+20110871
+U
+4   13   2
+Una anaconda...cuidado con el veneno
+Anaconda
+20097029
+U
+4   14   2
+Una anaconda...cuidado con el veneno

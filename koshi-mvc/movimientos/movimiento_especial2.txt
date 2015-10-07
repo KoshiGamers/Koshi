@@ -1,0 +1,10 @@
+Movimiento
+1
+KLIUOJ
+m m m k m
+0,1;0,1;0,2;3,2;0,-3
+Movimiento
+1
+WQEWW
+k k k
+0,-1;0,-1;0,2

@@ -1,0 +1,10 @@
+<Modelo.Personaje>
+  <maxVida>5</maxVida>
+  <vidaActual>5</vidaActual>
+  <estado>0</estado>
+  <pos>
+    <ejeX>0</ejeX>
+    <ejeY>2</ejeY>
+  </pos>
+  <nombre>Oso</nombre>
+</Modelo.Personaje>
