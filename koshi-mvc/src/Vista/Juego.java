@@ -138,8 +138,7 @@ public class Juego {
 																							// 0
 																							// si
 																							// no
-				// el valor de retorno de la fx de Mov es suceso(1 valido) y 2
-				// murio.
+
 
 				if (suceso == 1) {
 					int accionEspecial = IC.ValidarAccionEspecial(personaje1, personaje2, this.mapaActual);
