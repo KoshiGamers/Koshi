@@ -1,6 +1,11 @@
 package Vista;
 
 import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -9,26 +14,49 @@ import javax.swing.JLabel;
 
 public class Menu extends JFrame {
 	
-	private static int option;
+	private static int seleccionado=0;
 	
 	public Menu() {
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setPreferredSize(new Dimension(1024, 768));
+		setTitle("Koshi y la Selva del Amazonas");
 		// frame.getContentPane().add(grid);
 		pack();
 		getContentPane().setLayout(null);
 
 		JButton btnNuevoJuego = new JButton("Nuevo Juego");
 		btnNuevoJuego.setBounds(712, 326, 147, 72);
+		btnNuevoJuego.addMouseListener(new MouseAdapter(){
+			public void mousePressed(MouseEvent e){
+				if(e.getButton()==MouseEvent.BUTTON1){
+					seleccionado=1;					
+				}
+			}
+		});
 		getContentPane().add(btnNuevoJuego);
 
 		JButton btnCargarJuego = new JButton("Cargar Juego");
 		btnCargarJuego.setBounds(712, 428, 147, 72);
+		btnCargarJuego.addMouseListener(new MouseAdapter(){
+			public void mousePressed(MouseEvent e){
+				if(e.getButton()==MouseEvent.BUTTON1){
+					seleccionado=2;
+				}
+			}
+		});
+		
 		getContentPane().add(btnCargarJuego);
 
 		JButton btnSalir = new JButton("Salir");
 		btnSalir.setBounds(712, 534, 147, 72);
+		btnSalir.addMouseListener(new MouseAdapter(){
+			public void mousePressed(MouseEvent e){
+				if(e.getButton()==MouseEvent.BUTTON1){
+					seleccionado=3;
+				}
+			}
+		});
 		getContentPane().add(btnSalir);
 
 		JLabel lblNewLabel = new JLabel("");
@@ -36,7 +64,16 @@ public class Menu extends JFrame {
 		lblNewLabel.setBounds(0, 0, 1018, 740);
 		getContentPane().add(lblNewLabel);
 		setVisible(true);
+		
+	}
 
+
+	static int getSeleccionado() {
+		return seleccionado;
+	}
+
+	public static void setSeleccionado(int seleccionado) {
+		Menu.seleccionado = seleccionado;
 	}
 
 }

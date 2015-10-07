@@ -261,19 +261,24 @@ public class Juego {
 		int d = 0;
 		// System.out.print("Ingrese el siguiente movimiento + Tecla Intro: ");
 		Menu m = new Menu();
+		
 		BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Para cargar juego presione L");
 		System.out.println("Para crear juego nuevo presione N");
 		System.out.println("Para Salir juego presione cualquier tecla");
 
-		d = buffer.read();
+		
 		m.dispose();
-		if ((char) d == 'n' || (char) d == 'N')
-			return 1;
-		else if ((char) d == 'L' || (char) d == 'l')
-			return 2;
-		else
-			return 3;
+		int eleccion = Menu.getSeleccionado();
+		
+		System.out.println(eleccion);
+		return eleccion;
+		//if ((char) d == 'n' || (char) d == 'N')
+		//	return 1;
+		//else if ((char) d == 'L' || (char) d == 'l')
+		///	return 2;
+		//else
+		//	return 3;
 	}
 
 	public void MostrarPantallaRendicion() throws IOException {
